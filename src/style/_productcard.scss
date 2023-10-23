@@ -1,0 +1,210 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.product-image-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-image-container .advert-tab {
+    position: absolute;
+    font-family: 'Overpass', sans-serif;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 600;
+    color: white;
+    padding: 1px 10px 1px 10px;
+    background-color: #3F3A50;
+    height: 29px;
+    border-radius: 8px;
+    border: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: none;
+}
+
+.product-image-container .spec-tab-container {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image-container .spec-tab-container .spec-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 1px 10px 1px 10px;
+    background-color: #3F3A50;
+    border-radius: 8px;
+    border: 1px;
+    margin-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: none;
+}
+
+.product-image {
+    // width: 30%;
+    width: 113px;
+    height: 84px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+.product-model {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.product-model .spec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-model .advert-container {
+    display: flex;
+    align-items: center;
+}
+
+.product-model .advert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 1px, 10px, 1px, 10px;
+    background-color: #3F3A50;
+    margin-right: 20px;
+    width: 46px;
+    height: 20px;
+    border-radius: 8px;
+    border: 1px;
+}
+
+.icon-favorite {
+    color: #7572FF;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+
+.product-details .mechanical {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+    text-align: start;
+    width: 50%;
+}
+
+.product-details .finance {
+    font-weight: normal;
+    color: #777;
+    text-align: start;
+    width: 50%;
+}
+
+.monthly-price {
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Overpass', sans-serif;
+}
+
+.calculate {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .product-card {
+        width: 327px;
+        height: 364px;
+        border-radius: 16px;
+        box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.15);
+        margin: 10px;
+        padding: 0;
+    }
+
+    .product-image-container .advert-tab {
+        display: block;
+    }
+
+    .product-image-container .spec-tab-container .spec-tab {
+        display: block;
+    }
+
+    .product-image {
+        display: none;
+    }
+
+    .product-image:first-child {
+        display: block;
+        width: 327px;
+        height: 250px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .product-model {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .product-model .advert {
+        display: none;
+    }
+
+    .product-details {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .product-details .mechanical {
+        display: none;
+    }
+
+    .calculate {
+        display: inline;
+        color: #7572FF;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-left: 5px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .product-card {
+        width: 333px;
+        height: 364px;
+        margin: 10px;
+        padding: 0;
+    }
+
+}

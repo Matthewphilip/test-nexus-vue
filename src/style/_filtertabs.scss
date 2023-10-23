@@ -1,0 +1,43 @@
+.filtertab-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.filtertab-container .filter-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 93.75px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: white;
+    border: none;
+    color: #55595D;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-bottom-color 0.2s;
+}
+
+.filtertab-container .filter-tab:hover,
+.filtertab-container .filter-tab:active {
+    color: black;
+    border-bottom-color: #7572FF;
+    border-bottom-width: 3px;
+}
+
+.filtertab-container .filter-tab:first-child,
+.filtertab-container .filter-tab:first-child {
+    color: black;
+    border-bottom-color: #7572FF;
+    border-bottom-width: 3px;
+}
+
+@media (min-width: 768px) {
+    .filtertab-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}

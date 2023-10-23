@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-bottom: 1px solid #D1D6E0;
+        margin-bottom: 30px;
+    }
+}
