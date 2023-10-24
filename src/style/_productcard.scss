@@ -5,6 +5,10 @@
     margin-bottom: 10px;
 }
 
+.product-card:last-child {
+    margin-bottom: 70px;
+}
+
 .product-image-container {
     position: relative;
     display: flex;
@@ -102,6 +106,7 @@
     height: 20px;
     border-radius: 8px;
     border: 1px;
+    font-family: 'SF Pro Text', sans-serif;
 }
 
 .icon-favorite {
@@ -133,7 +138,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    font-family: 'Overpass', sans-serif;
+    font-family: 'SF Pro Text', sans-serif;
 }
 
 .calculate {
@@ -148,6 +153,10 @@
         box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.15);
         margin: 10px;
         padding: 0;
+    }
+
+    .product-card:last-child {
+        margin-bottom: 80px;
     }
 
     .product-image-container .advert-tab {
@@ -186,6 +195,10 @@
 
     .product-details .mechanical {
         display: none;
+    }
+
+    .monthly-price {
+        font-family: 'Overpass', sans-serif;
     }
 
     .calculate {
