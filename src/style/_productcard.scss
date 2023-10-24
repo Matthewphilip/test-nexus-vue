@@ -65,7 +65,6 @@
 }
 
 .product-image {
-    // width: 30%;
     width: 113px;
     height: 84px;
     border-radius: 16px;
@@ -131,6 +130,7 @@
     color: #777;
     text-align: start;
     width: 50%;
+    margin-left: 15px;
 }
 
 .monthly-price {
@@ -195,6 +195,10 @@
 
     .product-details {
         padding: 0px 10px 0px 10px;
+    }
+
+    .product-details .finance {
+        margin-left: 0;
     }
 
     .product-details .mechanical {

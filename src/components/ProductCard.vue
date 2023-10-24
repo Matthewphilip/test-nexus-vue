@@ -3,7 +3,7 @@
     <section class="product-image-container">
       <img
         class="product-image"
-        src="../assets/Matthew2.jpg"
+        src="../assets/wasp.jpeg"
         alt="Product Image"
       />
       <img
@@ -13,7 +13,7 @@
       />
       <img
         class="product-image"
-        src="../assets/Matthew2.jpg"
+        src="../assets/wasp.jpeg"
         alt="Product Image"
       />
       <p class="advert-tab">
@@ -30,9 +30,9 @@
       <div class="spec">
         <h2>{{ product.plate }} {{ product.make }} {{ product.model }}</h2>
         <div class="advert-container">
-          <div class="advert">
+          <p class="advert">
             {{ formatTransmission(product.advert_classification) }}
-          </div>
+          </p>
           <i
             class="fas fa-star fa-lg icon-favorite"
             v-if="isFavorited"
